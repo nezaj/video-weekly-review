@@ -4,4 +4,4 @@ We're using Instant as our database! Make sure to read AGENTS.md to understand h
 
 We are implementing things in phases. Be sure to read phases.md to understand the outline of the project
 
-Write a spec to implement phase 6
+We're done with all the phases. Can you do a check on our permissions and overall security
