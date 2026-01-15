@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { User } from "@instantdb/react";
 import { db } from "@/lib/db";
+import { ExportButton } from "./ExportButton";
 
 interface SettingsTabProps {
   user: User;
@@ -60,6 +61,17 @@ export function SettingsTab({ user }: SettingsTabProps) {
             </p>
           </div>
         </div>
+      </div>
+
+      {/* Data section */}
+      <div className="bg-bg-secondary border border-border rounded-2xl overflow-hidden mb-6">
+        <div className="px-4 py-3 border-b border-border">
+          <h3 className="text-sm font-medium text-text-secondary uppercase tracking-wide">
+            Data
+          </h3>
+        </div>
+
+        <ExportButton userId={user.id} />
       </div>
 
       {/* Account section */}
