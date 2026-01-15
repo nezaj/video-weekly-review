@@ -8,6 +8,6 @@ Phases
 
 [x] 4. Implement editing weekly reviews from the view page. I should be able to edit a week or a specific section
 
-[ ] 5. Add an export button to the settings page. This should contain all of my reviews as one markdown file.
+[x] 5. Add an export button to the settings page. This should contain all of my reviews as one markdown file.
 
 [ ] 6. Show a visualization for how many weeks are left in the year
