@@ -1,6 +1,6 @@
 Phases
 
-[ ] 1. Make a simple login flow, After signing in there should be two tabs, one for weekly reviews and another for settings. In the settings tab there should be a log out button that takes me back to the login page
+[x] 1. Make a simple login flow, After signing in there should be two tabs, one for weekly reviews and another for settings. In the settings tab there should be a log out button that takes me back to the login page
 
 [ ] 2. Implement seeing weekly reviews. Use some mock data. It should feel easy to scroll through previous entries as if I was reading a long text document
 
