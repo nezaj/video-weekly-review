@@ -245,3 +245,42 @@ input[type="text"]::placeholder {
   opacity: 0.1;
   z-index: -1;
 }
+
+/* Year Progress Dots */
+.week-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transition: transform 0.15s ease;
+  flex-shrink: 0;
+}
+
+.week-dot:hover {
+  transform: scale(1.4);
+}
+
+.week-dot--completed {
+  background: var(--success);
+}
+
+.week-dot--current {
+  background: transparent;
+  border: 2px solid var(--accent);
+  box-shadow: 0 0 0 2px rgba(249, 115, 22, 0.15);
+}
+
+.week-dot--current-completed {
+  background: var(--success);
+  border: 2px solid var(--accent);
+  box-shadow: 0 0 0 2px rgba(249, 115, 22, 0.2);
+}
+
+.week-dot--missed {
+  background: var(--error);
+  opacity: 0.35;
+}
+
+.week-dot--upcoming {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+}

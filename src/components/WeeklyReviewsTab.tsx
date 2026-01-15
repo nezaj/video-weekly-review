@@ -9,6 +9,7 @@ import { ReviewsList } from "./ReviewsList";
 import { CreateReviewButton } from "./CreateReviewButton";
 import { ReviewEditor } from "./ReviewEditor";
 import { WeekPicker, WeekOption } from "./WeekPicker";
+import { YearProgress } from "./YearProgress";
 
 export function WeeklyReviewsTab() {
   const { user } = db.useAuth();
@@ -207,7 +208,7 @@ export function WeeklyReviewsTab() {
   return (
     <div className="px-4 py-6 max-w-2xl mx-auto">
       {/* Header */}
-      <div className="mb-8 flex items-start justify-between">
+      <div className="mb-6 flex items-start justify-between">
         <div>
           <h1 className="font-heading text-2xl font-bold text-text-primary tracking-tight">
             Weekly Reviews
@@ -225,6 +226,9 @@ export function WeeklyReviewsTab() {
           <span>Add Review</span>
         </button>
       </div>
+
+      {/* Year Progress Visualization */}
+      <YearProgress reviews={reviews} />
 
       {/* Create Button for current week (only if no review exists) */}
       {!currentWeekReview && (

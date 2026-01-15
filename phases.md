@@ -10,4 +10,4 @@ Phases
 
 [x] 5. Add an export button to the settings page. This should contain all of my reviews as one markdown file.
 
-[ ] 6. Show a visualization for how many weeks are left in the year
+[x] 6. Show a visualization for how many weeks are left in the year
