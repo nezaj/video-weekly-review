@@ -4,9 +4,9 @@ Phases
 
 [x] 2. Implement seeing weekly reviews. Use some mock data. It should feel easy to scroll through previous entries as if I was reading a long text document
 
-[ ] 3. Implement creating new weekly reviews. It should be easy to fill out each section separately and I should feel delighted when I complete all of them. I should be able to edit them as well after submitting
+[x] 3. Implement creating new weekly reviews. It should be easy to fill out each section separately and I should feel delighted when I complete all of them. I should be able to edit them as well after submitting
 
-[ ] 4. Implement editing weekly reviews from the view page. I should be able to edit a week or a specific section
+[x] 4. Implement editing weekly reviews from the view page. I should be able to edit a week or a specific section
 
 [ ] 5. Add an export button to the settings page. This should contain all of my reviews as one markdown file.
 

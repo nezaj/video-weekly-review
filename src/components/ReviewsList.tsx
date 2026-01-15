@@ -5,9 +5,10 @@ import { ReviewCard } from "./ReviewCard";
 
 interface ReviewsListProps {
   reviews: WeeklyReview[];
+  onReviewClick?: (review: WeeklyReview) => void;
 }
 
-export function ReviewsList({ reviews }: ReviewsListProps) {
+export function ReviewsList({ reviews, onReviewClick }: ReviewsListProps) {
   if (reviews.length === 0) {
     return (
       <div className="bg-bg-secondary border border-border rounded-2xl p-8 text-center">
@@ -28,7 +29,11 @@ export function ReviewsList({ reviews }: ReviewsListProps) {
   return (
     <div className="divide-y-0">
       {reviews.map((review) => (
-        <ReviewCard key={review.id} review={review} />
+        <ReviewCard
+          key={review.id}
+          review={review}
+          onClick={onReviewClick ? () => onReviewClick(review) : undefined}
+        />
       ))}
     </div>
   );
